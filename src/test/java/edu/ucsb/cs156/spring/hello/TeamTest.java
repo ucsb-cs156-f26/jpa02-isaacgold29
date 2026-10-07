@@ -38,7 +38,7 @@ public class TeamTest {
     public void equals_correct_for_equivalent_instance() {
         Team team2 = new Team("test-team");
         Team team3 = new Team("test-team-different-name");
-        Team team4 = new Team("test-team-");
+        Team team4 = new Team("test-team");
         team4.addMember("test-member");
         assertEquals(team.equals(team2), true);
         assertEquals(team.equals(team3), false);
